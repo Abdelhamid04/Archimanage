@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>CaptchaDialog</class>
+ <widget class="QDialog" name="CaptchaDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>login</string>
+  </property>
+  <widget class="QListView" name="listView">
+   <property name="geometry">
+    <rect>
+     <x>190</x>
+     <y>20</y>
+     <width>511</width>
+     <height>551</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">ui-&gt;titleLabel-&gt;setStyleSheet(
+&quot;color: rgb(236, 236, 236);&quot;
+&quot;background-color: #FAF2EA;&quot;
+    &quot;font-size: 20px;&quot;
+    &quot;font-style: italic;&quot;
+    &quot;font-weight: bold;&quot;
+);
+
+</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_captcha">
+   <property name="geometry">
+    <rect>
+     <x>370</x>
+     <y>400</y>
+     <width>151</width>
+     <height>31</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_verifier">
+   <property name="geometry">
+    <rect>
+     <x>390</x>
+     <y>460</y>
+     <width>111</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+    background-color: #FFAE9D; /* Fond rose */
+    color: #392E2C; /* Texte foncé pour contraste */
+    border: 2px solid #CCAEA4; /* Bordure douce en couleur taupe */
+    border-radius: 10px; /* Coins arrondis */
+    padding: 5px 5px;
+    font-size: 16px;
+}
+
+QPushButton:hover {
+    background-color: #B39188; /* Fond taupe au survol */
+    border-color: #FFAE9D; /* Bordure rose au survol */
+}
+
+QPushButton:pressed {
+    background-color: #392E2C; /* Fond foncé au clic */
+    color: #FAF2EA; /* Texte clair */
+    border-color: #B39188; /* Bordure taupe au clic */
+}</string>
+   </property>
+   <property name="text">
+    <string>Valider</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_captcha">
+   <property name="geometry">
+    <rect>
+     <x>280</x>
+     <y>100</y>
+     <width>341</width>
+     <height>231</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_regenerate">
+   <property name="geometry">
+    <rect>
+     <x>590</x>
+     <y>480</y>
+     <width>71</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+    background-color: rgb(250, 227, 201); /*#FFAE9D; /* Fond rose */
+    color: #392E2C; /* Texte foncé pour contraste */
+    border: 2px solid #CCAEA4; /* Bordure douce en couleur taupe */
+    border-radius: 10px; /* Coins arrondis */
+    padding: 5px 5px;
+    font-size: 10px;
+}
+
+QPushButton:hover {
+    background-color: #B39188; /* Fond taupe au survol */
+    border-color: #FFAE9D; /* Bordure rose au survol */
+}
+
+QPushButton:pressed {
+    background-color: #392E2C; /* Fond foncé au clic */
+    color: #FAF2EA; /* Texte clair */
+    border-color: #B39188; /* Bordure taupe au clic */
+}</string>
+   </property>
+   <property name="text">
+    <string>Regénerer</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_fermer">
+   <property name="geometry">
+    <rect>
+     <x>220</x>
+     <y>510</y>
+     <width>81</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+    background-color: rgb(250, 227, 201); /*#FFAE9D; /* Fond rose */
+    color: #392E2C; /* Texte foncé pour contraste */
+    border: 2px solid #CCAEA4; /* Bordure douce en couleur taupe */
+    border-radius: 10px; /* Coins arrondis */
+    padding: 5px 5px;
+    font-size: 10px;
+}
+
+QPushButton:hover {
+    background-color: #B39188; /* Fond taupe au survol */
+    border-color: #FFAE9D; /* Bordure rose au survol */
+}
+
+QPushButton:pressed {
+    background-color: #392E2C; /* Fond foncé au clic */
+    color: #FAF2EA; /* Texte clair */
+    border-color: #B39188; /* Bordure taupe au clic */
+}</string>
+   </property>
+   <property name="text">
+    <string>Retourner</string>
+   </property>
+  </widget>
+  <widget class="QWidget" name="widget" native="true">
+   <property name="geometry">
+    <rect>
+     <x>190</x>
+     <y>20</y>
+     <width>511</width>
+     <height>551</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">
+background-color: #FAF2EA;
+</string>
+   </property>
+  </widget>
+  <zorder>listView</zorder>
+  <zorder>widget</zorder>
+  <zorder>pushButton_verifier</zorder>
+  <zorder>pushButton_regenerate</zorder>
+  <zorder>pushButton_fermer</zorder>
+  <zorder>lineEdit_captcha</zorder>
+  <zorder>label_captcha</zorder>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
